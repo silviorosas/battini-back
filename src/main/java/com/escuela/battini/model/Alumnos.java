@@ -24,15 +24,12 @@ public class Alumnos {
 
     @Override
     public String toString() {
-        return "Pre-inscripción realizada con éxito: " +
-                " nombre=" + nombre +
-                ", dni=" + dni +
-                ", edad=" + edad +
-                ", domicilio=" + domicilio +
-                ", email=" + email +
-                ", telefono=" + telefono +
-                ", especialidad=" + especialidad +'.'+ '\n' +
-                "Ante cualquier consulta puedes escribir a este correo o dirigirte personalmente a nuestra escuela sita en Sarmiento 90 de 14 a 23 hs."
+        return "TE PRE-INSCRIBISTE EXITOSAMENTE: " +'.'+ '\n' +
+                "NOMBRE: " + nombre +'.'+ '\n' +
+                "DNI: " + dni +'.'+ '\n' +              
+                "MAIL: " + email +'.'+ '\n' +              
+                "CURSO: " + especialidad +'.'+ '\n' +
+                "Ante cualquier consulta puedes escribir a este correo o dirigirte personalmente a nuestra escuela sita en Sarmiento 90 de 14:00 a 23:00 hs."
                 ;
     }
 }
