@@ -38,7 +38,7 @@ public class AlumnoController {
 
         Alumnos newAlumno = repoParaMail.save(alumnos);
         if(newAlumno != null){
-            mailService.sendMail(newAlumno.getEmail(),"Pre-Inscripción en CCT Concejal Battini",newAlumno.toString());
+            mailService.sendMail(newAlumno.getEmail(),"Pre-Inscripto en CCT Concejal Battini",newAlumno.toString());
         }
         return newAlumno;
     }
