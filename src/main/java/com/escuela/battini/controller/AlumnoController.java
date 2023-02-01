@@ -12,8 +12,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value="/api/")
-//@CrossOrigin(origins = "https://escuela-battini.web.app")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://escuela-battini.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class AlumnoController {
 
     private final AlumnoService repo;
