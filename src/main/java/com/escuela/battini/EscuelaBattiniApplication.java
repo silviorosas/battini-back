@@ -30,8 +30,8 @@ public class EscuelaBattiniApplication {
 		mailSender.setHost("smtp.gmail.com");
 		mailSender.setPort(587);
 
-		mailSender.setUsername("sodaclaro@gmail.com");
-		mailSender.setPassword("nltkvcytborwdstr");
+		mailSender.setUsername("escuelabattiniap@gmail.com");
+		mailSender.setPassword("czbyncaberaznaig");
 
 		Properties props = mailSender.getJavaMailProperties();
 		props.put("mail.transport.protocol", "smtp");
@@ -51,6 +51,9 @@ Seleccione la aplicación y el dispositivo... -> por ejemplo, Otro (nombre perso
 Ingrese el nombre de la aplicación, por ejemplo, MyApp ->
 Generar Copiar una contraseña de 16 caracteres
 Use una contraseña de 16 caracteres con el nombre de usuario de Gmail en su aplicación
+
+mailSender.setUsername("sodaclaro@gmail.com");
+mailSender.setPassword("nltkvcytborwdstr");
 	*/
 
 
