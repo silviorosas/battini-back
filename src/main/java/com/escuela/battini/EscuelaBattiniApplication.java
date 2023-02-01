@@ -30,7 +30,7 @@ public class EscuelaBattiniApplication {
 		mailSender.setHost("smtp.gmail.com");
 		mailSender.setPort(587);
 
-		mailSender.setUsername("escuelabattiniap@gmail.com");
+		mailSender.setUsername("escuelabattiniapp@gmail.com");
 		mailSender.setPassword("czbyncaberaznaig");
 
 		Properties props = mailSender.getJavaMailProperties();
@@ -41,8 +41,7 @@ public class EscuelaBattiniApplication {
 
 		return mailSender;
 	}
-
-	/*Una de las alternativas para solucionar este problema es utilizar la verificación en dos pasos y generar la contraseña de la aplicación:
+/*Una de las alternativas para solucionar este problema es utilizar la verificación en dos pasos y generar la contraseña de la aplicación:
 
 Cuenta de Google -> Seguridad -> Verificación en dos pasos -> Ingrese la contraseña cuando se le solicite ->
 Encienda (puede usar SMS para obtener el código de Gmail para activar la Verificación en dos pasos)
