@@ -1,7 +1,13 @@
 package com.escuela.battini.model;
 
+import lombok.*;
+
 import javax.persistence.*;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name="alumnos")
 public class Alumnos {
@@ -16,67 +22,17 @@ public class Alumnos {
     private Long telefono;
     private String especialidad;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public Integer getDni() {
-        return dni;
-    }
-
-    public void setDni(Integer dni) {
-        this.dni = dni;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public String getDomicilio() {
-        return domicilio;
-    }
-
-    public void setDomicilio(String domicilio) {
-        this.domicilio = domicilio;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public Long getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(Long telefono) {
-        this.telefono = telefono;
-    }
-
-    public String getEspecialidad() {
-        return especialidad;
-    }
-
-    public void setEspecialidad(String especialidad) {
-        this.especialidad = especialidad;
+    @Override
+    public String toString() {
+        return "Pre-inscripción realizada con éxito: " +
+                " nombre=" + nombre +
+                ", dni=" + dni +
+                ", edad=" + edad +
+                ", domicilio=" + domicilio +
+                ", email=" + email +
+                ", telefono=" + telefono +
+                ", especialidad=" + especialidad +'.'+ '\n' +
+                "Ante cualquier consulta puedes escribir a este correo o dirigirte personalmente a nuestra escuela sita en Sarmiento 90 de 14 a 23 hs."
+                ;
     }
 }

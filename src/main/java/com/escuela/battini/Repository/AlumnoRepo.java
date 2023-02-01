@@ -8,5 +8,10 @@ import java.util.List;
 
 @Repository
 public interface AlumnoRepo extends JpaRepository<Alumnos,Integer> {
+
     List<Alumnos> findByEspecialidad (String especialidad);
+
+    List<Alumnos> findByNombre(String nombre);
+
+    List<Alumnos> findByDni(Integer dni);
 }
