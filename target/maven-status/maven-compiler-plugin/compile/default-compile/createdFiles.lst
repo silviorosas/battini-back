@@ -1,0 +1,6 @@
+com\escuela\battini\Repository\AlumnoRepo.class
+com\escuela\battini\service\AlumnoService.class
+com\escuela\battini\model\Alumnos.class
+com\escuela\battini\EscuelaBattiniApplication.class
+com\escuela\battini\controller\AlumnoController.class
+com\escuela\battini\service\MailService.class
